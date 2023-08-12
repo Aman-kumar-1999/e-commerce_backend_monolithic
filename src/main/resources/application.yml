@@ -1,0 +1,36 @@
+server:
+  port: 5002
+  
+project:
+  image: https://eqipped.com/image/
+#   image: http://3.6.36.232/image/
+#   upload: D:\\eqipped\\eqipped_image
+  upload: /var/www/html/image
+  
+key:
+  campaigname: Order_Confirmed(3)
+  updatecampaigname: Order_Confirmed(3)
+  source: Web api
+  templateparams: Yes
+  updatetemplateParams: Yes
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://admin:gsk3E1ZwjWwgqAoC@cluster0.9xkoq.mongodb.net/
+      database: eqipped_new 
+   
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: gearloose.lab@gmail.com
+    password: jijknjiwmvygfrqs
+    # port: 587    
+    # username: amankumar19990923@gmail.com
+    # password: cbcxjmkitakippqj
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
